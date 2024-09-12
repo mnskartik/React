@@ -1,0 +1,791 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header .nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.header .nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.impact img {
+  width: 100%;
+  height: auto;
+  display: block; 
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+
+.hero-buttons .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color:#333;;
+}
+
+.btn-secondary {
+  background-color: #333;;
+}
+
+.impact, .how-it-works, .success-stories, .donation {
+  padding: 20px;
+}
+
+.how-it-works img,
+.success-stories-carousel img,
+.donation img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  padding: 20px;
+  color: #fff;
+}
+
+.footer-nav a {
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-social a {
+  color: black;
+  margin: 0 10px;
+}
+
+.newsletter-signup input[type="email"] {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.newsletter-signup .btn {
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  height: 60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.logo-image {
+  height: 40px;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .logo-image {
+    height: 30px;
+  }
+}
+
+.medicine-image {
+  text-align: center; 
+  padding: 20px; 
+}
+
+.medicine-image-icon {
+  width: 100px; 
+  height: auto;
+}
+
+.medicine-image-heading {
+  margin-top: 10px; 
+  font-size: 24px; 
+  font-weight: bold; 
+}
+
+.medicine-image p {
+  margin-top: 10px; 
+  font-size: 16px; 
+  line-height: 1.5; 
+}
+
+h2 {
+  text-align: center;
+}
+
+.impact {
+  padding: 20px;
+  text-align: center;
+}
+
+.impact h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.impact-visuals {
+  margin-bottom: 20px;
+}
+
+.impact-image {
+  width: 100%;
+  height: auto;
+}
+
+.impact p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.btn-primary:hover {
+  background-color: #333;;
+}
+
+.app-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.donation-container, .matching-container, .distribution-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.three-steps-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 20px; 
+}
+
+.donation-container, 
+.matching-container, 
+.distribution-container {
+  flex: 1; 
+  text-align: center; 
+  padding: 10px; 
+}
+
+.donation-container img,
+.matching-container img,
+.distribution-container img {
+  width: 100px; 
+  height: auto; 
+  margin-bottom: 10px; 
+}
+
+.donation-container p,
+.matching-container p,
+.distribution-container p {
+  font-size: 16px; 
+  color: black;
+  margin: 0; 
+}
+
+@media (max-width: 768px) {
+  .three-steps-container {
+    flex-direction: column; 
+  }
+
+  .donation-container img,
+  .matching-container img,
+  .distribution-container img {
+    width: 80px; 
+  }
+
+  .donation-container p,
+  .matching-container p,
+  .distribution-container p {
+    font-size: 14px; 
+  }
+}
+
+.success-stories {
+  padding: 20px;
+  text-align: center;
+}
+
+.success-stories h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.success-stories-carousel {
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+  overflow-x: auto; 
+  padding: 10px 0; 
+}
+
+.story-card {
+  background-color: #fff;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  overflow: hidden; 
+  width: 300px; 
+  text-align: left; 
+}
+
+.story-image {
+  width: 100%;
+  height: auto;
+}
+
+.story-content {
+  padding: 15px;
+}
+
+.story-content p {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:#333;;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.btn-primary:hover {
+  background-color: #333;;
+}
+
+@media (max-width: 768px) {
+  .success-stories-carousel {
+    flex-direction: column;
+  }
+
+  .story-card {
+    width: 100%;
+  }
+}
+
+.three-steps-container {
+  padding: 40px 20px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.steps-heading {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.steps-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.donation-container, .matching-container, .distribution-container {
+  background-color: inherit;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.donation-container img, .matching-container img, .distribution-container img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .steps-heading {
+    font-size: 24px;
+  }
+
+  .steps-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .donation-container, .matching-container, .distribution-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-nav a,
+.footer-social a,
+.footer-contact p {
+  color: #fff;
+  text-decoration: none;
+  margin: 5px 10px;
+}
+
+.footer-nav {
+  margin-bottom: 20px;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #007bff;
+}
+
+.footer-contact {
+  margin-bottom: 20px;
+}
+
+.newsletter-signup {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.newsletter-signup input[type="email"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.newsletter-signup .btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.newsletter-signup .btn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .footer-nav,
+  .footer-social,
+  .footer-contact,
+  .newsletter-signup {
+    text-align: center;
+  }
+
+  .newsletter-signup {
+    flex-direction: column;
+  }
+}
+.live {
+  position: relative;
+  width: 100%;
+  height: auto; }
+
+.live-icon {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0.5; 
+}
+
+.live-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff; /* White text color */
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Optional: Semi-transparent background for better text readability */
+  border-radius: 10px; /* Optional: Rounded corners for the background */
+}
+
+.live-heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.live p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+.medicine-image {
+  padding: 40px; 
+  background-color: #333; /* Background color */
+  color: #fff; /* Text color */
+  text-align: center; /* Center-align text */
+  border-radius: 10px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin: 20px; /* Space around the component */
+}
+
+.medicine-image-icon {
+  width: 150px; /* Increase size of the icon */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure icon is centered */
+  margin: 0 auto 20px; 
+}
+
+.medicine-image-heading {
+  font-size: 36px; 
+  font-weight: bold;
+  margin-bottom: 20px; 
+}
+
+.medicine-image p {
+  font-size: 18px; /* Larger font size for paragraphs */
+  line-height: 1.6; /* Improve readability with line height */
+  margin-bottom: 15px; 
+}
+.live {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  background-color: #f4f4f4; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin: 20px auto; 
+  max-width: 1200px; 
+}
+
+.live-icon {
+  width: 250px; 
+  height: auto; 
+  margin-right: 20px; 
+}
+
+.live-content {
+  flex: 1; /* Allow the content to take the remaining space */
+}
+
+.live-heading {
+  font-size: 36px; /* Increase font size for heading */
+  font-weight: bold; /* Bold heading for emphasis */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.live p {
+  font-size: 20px; 
+  line-height: 1.6; 
+  margin-bottom: 15px; /* Space between paragraphs */
+}
+.impact {
+  padding: 40px;
+  background-color: #f4f4f4; 
+  border-radius: 8px; /* Optional: Rounded corners for visual appeal */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  text-align: center; /* Center-align text */
+  margin: 20px auto; 
+  max-width: 1200px; 
+}
+
+.impact h2 {
+  font-size: 36px; 
+  margin-bottom: 20px; 
+}
+
+.impact-visuals p {
+  font-size: 24px; 
+  line-height: 1.6;
+  margin-bottom: 15px; 
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007bff; 
+  color: #fff; 
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px; 
+  margin-top: 20px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; 
+}
+.three-steps-container {
+  padding: 60px 20px;
+  text-align: center; 
+  background-color: #f4f4f4; 
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+  margin: 40px auto; 
+  max-width: 1200px; /* Maximum width for the container */
+}
+
+.steps-heading {
+  font-size: 48px; /* Larger font size for the heading */
+  margin-bottom: 40px; /* Space between heading and steps */
+  color: #333; /* Dark color for better readability */
+}
+
+.steps-content {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Distribute space evenly between items */
+  align-items: stretch; /* Ensure items stretch to the same height */
+  gap: 30px; /* Increased space between steps */
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+  padding: 0 20px; /* Add horizontal padding */
+}
+
+.donation-container, 
+.matching-container, 
+.distribution-container {
+  flex: 1; /* Allow containers to grow and shrink equally */
+  text-align: center; /* Center-align text inside each container */
+  padding: 30px; /* Increased padding inside each container */
+  background-color: #fff; /* Background color for each step */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+}
+
+.donation-container img, 
+.matching-container img, 
+.distribution-container img {
+  width: 120px; /* Larger image width */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 15px; 
+}
+
+.donation-container p, 
+.matching-container p, 
+.distribution-container p {
+  font-size: 20px; 
+  margin: 0; /* Remove default margin */
+  color: #333; /* Dark text color for better readability */
+}
+
+@media (max-width: 768px) {
+  .steps-content {
+    flex-direction: column; 
+    align-items: center; /* Center-align items */
+  }
+
+  .donation-container, 
+  .matching-container, 
+  .distribution-container {
+    width: 100%; /* Full width for smaller screens */
+    margin-bottom: 30px; 
+  }
+}
+.success-stories {
+  padding: 60px 20px; /* Increased padding for more space */
+  text-align: center; /* Center-align text within the container */
+  background-color: #f4f4f4; 
+  border-radius: 8px; /* Optional: Rounded corners for visual appeal */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Increased shadow for depth */
+  margin: 40px auto; /* Center the container and add vertical spacing */
+  max-width: 1200px; 
+}
+
+.success-stories h2 {
+  font-size: 48px; 
+  margin-bottom: 40px; /* Space between heading and stories */
+  color: #333; 
+}
+
+.success-stories-carousel {
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the carousel */
+  gap: 30px; 
+  overflow-x: auto; 
+  padding: 0 20px; 
+}
+
+.story-card {
+  background-color: #fff; 
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  overflow: hidden;
+  width: 320px; 
+  text-align: left; 
+}
+
+.story-image {
+  width: 100%; 
+  height: auto; 
+}
+
+.story-content {
+  padding: 20px; 
+}
+
+.story-content p {
+  font-size: 20px; /* Larger font size for the text */
+  color: #333; 
+  margin: 0; /* Remove default margin */
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 15px 30px; /* Increased padding for the button */
+  background-color: #007bff; 
+  color: #fff; /* Button text color */
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px; 
+  margin-top: 30px; 
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; 
+}
+
+@media (max-width: 768px) {
+  .success-stories-carousel {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .story-card {
+    width: 100%; 
+    margin-bottom: 30px; 
+  }
+
+  .btn-primary {
+    font-size: 16px; 
+  }
+}
+.medicine-image {
+  padding: 60px 20px; 
+  text-align: center; 
+  background-color: #f4f4f4; 
+  border-radius: 8px; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+  margin: 40px auto; 
+  max-width: 1200px; 
+}
+
+.medicine-image-icon {
+  width: 150px; 
+  height: auto; 
+  margin-bottom: 20px; 
+}
+
+.medicine-image-heading {
+  font-size: 48px; 
+  margin-bottom: 20px; 
+  color: #333; 
+}
+
+.medicine-image p {
+  font-size: 22px; 
+  color: #333; 
+  margin: 0 0 20px 0; 
+}
+
+@media (max-width: 768px) {
+  .medicine-image {
+    padding: 40px 10px; 
+  }
+
+  .medicine-image-icon {
+    width: 120px; 
+  }
+
+  .medicine-image-heading {
+    font-size: 36px; 
+  }
+
+  .medicine-image p {
+    font-size: 18px; 
+  }
+}
+/* Button styles */
+.btn-primary, .btn-secondary, .newsletter-signup .btn {
+  background-color: #333; /* Same as navbar color */
+  color: #fff; /* Ensure text is visible */
+}
+
+.btn-primary:hover, .btn-secondary:hover, .newsletter-signup .btn:hover {
+  background-color: #555; /* Slightly lighter shade for hover effect */
+}
+
